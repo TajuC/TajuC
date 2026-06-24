@@ -1,8 +1,10 @@
 # TajuC
 
-Malware analyst and computer science student. I reverse engineer Windows software and build the tooling the work needs: pattern and signature scanners, low-level memory access, and the CLI and desktop apps that wrap them. I read binaries at the byte level and turn what I find into signatures that survive client patches.
+Malware analyst and computer science student. I work low in the stack: reverse engineering Windows binaries, PE analysis, and the tooling that turns that work into something repeatable. I build pattern and signature scanners, memory-inspection utilities, and the CLI and desktop apps around them, in Rust and C++.
 
-Most of my public work centers on MapleStory client research: finding byte signatures and offsets that hold across client builds, then making that repeatable. The flagship project carries that idea across three surfaces on one engine.
+Most of my public work is game-client binary analysis: reading a target's memory, finding byte signatures and offsets that hold across client builds, and making that reproducible. MapleStory is the case study; the flagship project carries the approach across three surfaces on one engine.
+
+**Responsible use.** Everything here is built for reverse-engineering practice, binary analysis, and authorized research on software I own or am permitted to study.
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=cplusplus&logoColor=white)
@@ -45,7 +47,7 @@ A header-only C++ utility for safe, structured memory access. Aimed at internal 
 
 ## More public work
 
-- [MapleC](https://github.com/TajuC/MapleC) - C++. An internal menu for MapleStory GMS 253.3 with player stats.
+- [MapleC](https://github.com/TajuC/MapleC) - C++. An internal menu for a MapleStory client (GMS 253.3) that shows live player stats.
 - [MapleAOB](https://github.com/TajuC/MapleAOB) - C++. A simple array-of-bytes scanner.
 - [clalit-pharmacy-stock-scanner](https://github.com/TajuC/clalit-pharmacy-stock-scanner) - JavaScript. An automated pharmacy stock scanner with a bilingual English and Hebrew dashboard.
 - [Templates-Utility](https://github.com/TajuC/Templates-Utility) - C++. Fast access to repeated message templates for customer-service and technical-support staff.
@@ -62,4 +64,4 @@ A header-only C++ utility for safe, structured memory access. Aimed at internal 
 
 **Systems** - Rust and C++ for the core, with practical Python and JavaScript tooling around it. Tauri for desktop, SQLite for local state, NSIS for installers. Releases ship SBOM and SHA256 artifacts.
 
-Based in Israel. I work in English and Hebrew. Open to work.
+Based in Israel. I work in English and Hebrew. Open to early-career work in reverse engineering, malware analysis, low-level Windows security, security tooling, and game security research.

@@ -35,6 +35,14 @@ The same `maple-core` library feeds three surfaces:
 
 Releases ship SBOMs and SHA256SUMS. GPL-3.0, latest release `v0.7.2`.
 
+```mermaid
+flowchart LR
+    CLI["maple-cli"] --> CORE["maple-core (engine)"]
+    APP["maple-app (Tauri desktop)"] --> CORE
+    CORE --> OUT["offsets and signatures"]
+    APP -. history .-> DB[("SQLite")]
+```
+
 ### [MapleDumper](https://github.com/TajuC/MapleDumper)
 
 The C++ predecessor the Rust toolkit grew out of. A SIMD and AVX2 optimized pattern scanner, and where the performance approach behind the current engine started.
